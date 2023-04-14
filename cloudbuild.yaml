@@ -1,0 +1,12 @@
+steps:
+  - name: 'gcr.io/cloud-builders/gcloud'
+    args:
+      - 'functions'
+      - 'deploy'
+      - '<your-function-name>'
+      - '--entry-point'
+      - '<your-function-entry-point>'
+      - '--runtime'
+      - '<your-function-runtime>'
+      - '--trigger-http'
+      - '--allow-unauthenticated'
